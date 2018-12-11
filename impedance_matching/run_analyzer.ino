@@ -40,4 +40,7 @@ void loop()
   int antenna_value = analogRead(antenna_voltage_pin);
   Serial.print("\nAntenna value : ");
   Serial.print((antenna_value));
+  int difference = antenna_value - transmitter_value;
+  Serial.print("\nDifference : ");
+  Serial.print(difference);
 }
